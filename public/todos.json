@@ -1,0 +1,8 @@
+[
+    {"id": 1, "name": "Do laundry", "completed": false,"description": "blah"},
+    {"id": 2, "name": "Send off mail for bills", "completed": false, "description": "blah"},
+    {"id": 3, "name": "Pick up milk and bread", "completed": false, "description": "blah"},
+    {"id": 4, "name": "Get oil change", "completed": false, "description": "blah"},
+    {"id": 5, "name": "Pick up pens and paper", "completed": false, "description": "blah"},
+    {"id": 6, "name": "Finish diy projectr", "completed": false, "description": "blah"}    
+]
