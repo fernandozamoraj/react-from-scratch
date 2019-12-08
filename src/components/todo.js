@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 const Todo = (props) =>{
 
     const {todo} = props;
-    const [isChecked, setIsChecked] = useState(todo.completed)
+    const [isChecked, setIsChecked] = useState(todo.completed);
  
     const checkItem = () =>{
         todo.completed = !todo.completed;

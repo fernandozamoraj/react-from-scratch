@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
 import {hot} from "react-hot-loader";
 import Todos from "./components/todos";
+import TodosWithRedux from "./components/todosWithRedux";
+import { Provider } from "react-redux";
 import "./App.css";
 import axios from 'axios';
+import store from "./redux/store";
 
 const App = () => {
 
@@ -30,10 +33,16 @@ const App = () => {
 
 
   return(
-    <div className="App">
-      <h1> Hello, World! </h1>
-      <Todos todos={todos} />>
-    </div>
+    <Provider store={store}>
+     <div className="App">
+        <h1> Todos With Hooks </h1>
+        <Todos todos={todos} />
+        <hr></hr>
+        <h1>Todos with Redux</h1>
+        <TodosWithRedux />>
+      </div>
+    </Provider>
+ 
   );
 }
 
