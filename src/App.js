@@ -6,6 +6,8 @@ import { Provider } from "react-redux";
 import "./App.css";
 import axios from 'axios';
 import store from "./redux/store";
+import MyNavBar from "./components/myNavBar";
+import MyContent from "./components/myContent";
 
 const App = () => {
 
@@ -35,6 +37,8 @@ const App = () => {
   return(
     <Provider store={store}>
      <div className="App">
+       <MyNavBar />
+       <MyContent />
         <h1> Todos With Hooks </h1>
         <Todos todos={todos} />
         <hr></hr>
