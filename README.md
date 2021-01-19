@@ -14,3 +14,4 @@ cd react-from-scratch
 npm install
 
 got your browser and navigate to localhost:3000
+d
